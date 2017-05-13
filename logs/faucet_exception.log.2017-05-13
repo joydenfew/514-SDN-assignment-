@@ -1,0 +1,444 @@
+May 13 14:21:23 faucet.exception ERROR    Unhandled exception, killing RYU
+Traceback (most recent call last):
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/util.py", line 51, in __koe
+    func(*args, **kwargs)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 495, in handler_connect_or_disconnect
+    self.handler_datapath(ryu_dp)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 520, in handler_datapath
+    dp_id, discovered_up_port_nums)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 564, in datapath_connect
+    ofmsgs.extend(self._add_default_meters())
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 396, in _add_default_meters
+    ofmsg.append(self.value_meteradd(
+NameError: global name 'ofmsg' is not defined
+May 13 14:23:38 faucet.exception ERROR    Unhandled exception, killing RYU
+Traceback (most recent call last):
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/util.py", line 51, in __koe
+    func(*args, **kwargs)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 495, in handler_connect_or_disconnect
+    self.handler_datapath(ryu_dp)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 520, in handler_datapath
+    dp_id, discovered_up_port_nums)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 564, in datapath_connect
+    ofmsgs.extend(self._add_default_meters())
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 399, in _add_default_meters
+    band=self.valve_of.dropband(
+AttributeError: 'Valve' object has no attribute 'valve_of'
+May 13 14:25:45 faucet.exception ERROR    Unhandled exception, killing RYU
+Traceback (most recent call last):
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/util.py", line 51, in __koe
+    func(*args, **kwargs)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 495, in handler_connect_or_disconnect
+    self.handler_datapath(ryu_dp)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 520, in handler_datapath
+    dp_id, discovered_up_port_nums)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 564, in datapath_connect
+    ofmsgs.extend(self._add_default_meters())
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 401, in _add_default_meters
+    burst_size=0
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve_of.py", line 307, in dropband
+    return parse.OFPMeterBandDrop(
+NameError: global name 'parse' is not defined
+May 13 14:30:10 faucet.exception ERROR    Unhandled exception, killing RYU
+Traceback (most recent call last):
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/util.py", line 51, in __koe
+    func(*args, **kwargs)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 495, in handler_connect_or_disconnect
+    self.handler_datapath(ryu_dp)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 520, in handler_datapath
+    dp_id, discovered_up_port_nums)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 564, in datapath_connect
+    ofmsgs.extend(self._add_default_meters())
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 401, in _add_default_meters
+    burst_size=0
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve_of.py", line 307, in dropband
+    return parse.OFPMeterBandDrop(
+NameError: global name 'parse' is not defined
+May 13 14:33:09 faucet.exception ERROR    Unhandled exception, killing RYU
+Traceback (most recent call last):
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/util.py", line 51, in __koe
+    func(*args, **kwargs)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 495, in handler_connect_or_disconnect
+    self.handler_datapath(ryu_dp)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 520, in handler_datapath
+    dp_id, discovered_up_port_nums)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 564, in datapath_connect
+    ofmsgs.extend(self._add_default_meters())
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 401, in _add_default_meters
+    burst_size=0
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve_of.py", line 307, in dropband
+    return parse.OFPMeterBandDrop(
+NameError: global name 'parse' is not defined
+May 13 14:35:03 faucet.exception ERROR    Unhandled exception, killing RYU
+Traceback (most recent call last):
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/util.py", line 51, in __koe
+    func(*args, **kwargs)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 495, in handler_connect_or_disconnect
+    self.handler_datapath(ryu_dp)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 520, in handler_datapath
+    dp_id, discovered_up_port_nums)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 564, in datapath_connect
+    ofmsgs.extend(self._add_default_meters())
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 401, in _add_default_meters
+    burst_size=0
+TypeError: value_meteradd() got an unexpected keyword argument 'band'
+May 13 14:36:40 faucet.exception ERROR    Unhandled exception, killing RYU
+Traceback (most recent call last):
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/util.py", line 51, in __koe
+    func(*args, **kwargs)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 495, in handler_connect_or_disconnect
+    self.handler_datapath(ryu_dp)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 520, in handler_datapath
+    dp_id, discovered_up_port_nums)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 564, in datapath_connect
+    ofmsgs.extend(self._add_default_meters())
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 401, in _add_default_meters
+    burst_size=0
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 337, in value_meteradd
+    bands=bands)
+NameError: global name 'bands' is not defined
+May 13 14:37:35 faucet.exception ERROR    Unhandled exception, killing RYU
+Traceback (most recent call last):
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/util.py", line 51, in __koe
+    func(*args, **kwargs)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 495, in handler_connect_or_disconnect
+    self.handler_datapath(ryu_dp)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 520, in handler_datapath
+    dp_id, discovered_up_port_nums)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 564, in datapath_connect
+    ofmsgs.extend(self._add_default_meters())
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 401, in _add_default_meters
+    burst_size=0
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 337, in value_meteradd
+    bands=band)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve_of.py", line 304, in metermod
+    bands=bands)
+TypeError: __init__() got an unexpected keyword argument 'flag'
+May 13 14:39:44 faucet.exception ERROR    Unhandled exception, killing RYU
+Traceback (most recent call last):
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/util.py", line 51, in __koe
+    func(*args, **kwargs)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 495, in handler_connect_or_disconnect
+    self.handler_datapath(ryu_dp)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 520, in handler_datapath
+    dp_id, discovered_up_port_nums)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 564, in datapath_connect
+    ofmsgs.extend(self._add_default_meters())
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 401, in _add_default_meters
+    burst_size=0
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 337, in value_meteradd
+    bands=band)
+TypeError: metermod() got an unexpected keyword argument 'flags'
+May 13 14:41:35 faucet.exception ERROR    Unhandled exception, killing RYU
+Traceback (most recent call last):
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/util.py", line 51, in __koe
+    func(*args, **kwargs)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 495, in handler_connect_or_disconnect
+    self.handler_datapath(ryu_dp)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 520, in handler_datapath
+    dp_id, discovered_up_port_nums)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 564, in datapath_connect
+    ofmsgs.extend(self._add_default_meters())
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 401, in _add_default_meters
+    burst_size=0
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 337, in value_meteradd
+    bands=band)
+TypeError: metermod() got an unexpected keyword argument 'flags'
+May 13 14:42:59 faucet.exception ERROR    Unhandled exception, killing RYU
+Traceback (most recent call last):
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/util.py", line 51, in __koe
+    func(*args, **kwargs)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 495, in handler_connect_or_disconnect
+    self.handler_datapath(ryu_dp)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 520, in handler_datapath
+    dp_id, discovered_up_port_nums)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 564, in datapath_connect
+    ofmsgs.extend(self._add_default_meters())
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 401, in _add_default_meters
+    burst_size=0
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 337, in value_meteradd
+    bands=band)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve_of.py", line 302, in metermod
+    flag=flag,
+NameError: global name 'flag' is not defined
+May 13 14:44:08 faucet.exception ERROR    Unhandled exception, killing RYU
+Traceback (most recent call last):
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/util.py", line 51, in __koe
+    func(*args, **kwargs)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 495, in handler_connect_or_disconnect
+    self.handler_datapath(ryu_dp)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 521, in handler_datapath
+    self._send_flow_msgs(ryu_dp, flowmods)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 321, in _send_flow_msgs
+    ryu_dp.send_msg(flow_msg)
+  File "/usr/local/lib/python2.7/dist-packages/ryu/controller/controller.py", line 347, in send_msg
+    msg.serialize()
+  File "/usr/local/lib/python2.7/dist-packages/ryu/ofproto/ofproto_parser.py", line 220, in serialize
+    self._serialize_body()
+  File "/usr/local/lib/python2.7/dist-packages/ryu/ofproto/ofproto_v1_3_parser.py", line 3749, in _serialize_body
+    for b in self.bands:
+TypeError: 'OFPMeterBandDrop' object is not iterable
+May 13 14:59:04 faucet.exception ERROR    Unhandled exception, killing RYU
+Traceback (most recent call last):
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/util.py", line 51, in __koe
+    func(*args, **kwargs)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 495, in handler_connect_or_disconnect
+    self.handler_datapath(ryu_dp)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 520, in handler_datapath
+    dp_id, discovered_up_port_nums)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 565, in datapath_connect
+    ofmsgs.extend(self._add_default_meters())
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 401, in _add_default_meters
+    bands=bands.append(self.valve_of.dropband(
+AttributeError: 'Valve' object has no attribute 'valve_of'
+May 13 14:59:48 faucet.exception ERROR    Unhandled exception, killing RYU
+Traceback (most recent call last):
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/util.py", line 51, in __koe
+    func(*args, **kwargs)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 495, in handler_connect_or_disconnect
+    self.handler_datapath(ryu_dp)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 520, in handler_datapath
+    dp_id, discovered_up_port_nums)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 565, in datapath_connect
+    ofmsgs.extend(self._add_default_meters())
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 403, in _add_default_meters
+    burst_size=0))
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 338, in value_meteradd
+    bands=band)
+NameError: global name 'band' is not defined
+May 13 16:40:12 faucet.exception ERROR    Unhandled exception, killing RYU
+Traceback (most recent call last):
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/util.py", line 51, in __koe
+    func(*args, **kwargs)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 495, in handler_connect_or_disconnect
+    self.handler_datapath(ryu_dp)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 520, in handler_datapath
+    dp_id, discovered_up_port_nums)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 575, in datapath_connect
+    ofmsgs.extend(self._add_ports_and_vlans(discovered_up_port_nums))
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 547, in _add_ports_and_vlans
+    ofmsgs.extend(self.port_add(self.dp.dp_id, port_num))
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 730, in port_add
+    ofmsgs.extend(self._port_add_vlans(port, mirror_act))
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 659, in _port_add_vlans
+    ofmsgs.extend(self.flood_manager.build_flood_rules(vlan))
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve_flood.py", line 260, in build_flood_rules
+    unicast_eth_dst, command, flood_priority))
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve_flood.py", line 196, in _build_unmirrored_flood_rules
+    port, []))
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve_flood.py", line 174, in _build_flood_rule_for_port
+    eth_dst=eth_dst, eth_dst_mask=eth_dst_mask)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 254, in valve_in_match
+    match = valve_of.match(match_dict)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve_of.py", line 230, in match
+    return parser.OFPMatch(**match_fields)
+  File "/usr/local/lib/python2.7/dist-packages/ryu/ofproto/ofproto_v1_3_parser.py", line 846, in __init__
+    (k, v) in kwargs.items())
+  File "/usr/local/lib/python2.7/dist-packages/ryu/ofproto/ofproto_v1_3_parser.py", line 846, in <genexpr>
+    (k, v) in kwargs.items())
+  File "/usr/local/lib/python2.7/dist-packages/ryu/ofproto/oxx_fields.py", line 137, in _normalize_user
+    return (k2, uv2)
+KeyboardInterrupt
+May 13 17:00:06 faucet.exception ERROR    Unhandled exception, killing RYU
+Traceback (most recent call last):
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/util.py", line 51, in __koe
+    func(*args, **kwargs)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 416, in _packet_in_handler
+    inpacketcount = inpacketcount + 1
+UnboundLocalError: local variable 'inpacketcount' referenced before assignment
+May 13 17:08:08 faucet.exception ERROR    Unhandled exception, killing RYU
+Traceback (most recent call last):
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/util.py", line 51, in __koe
+    func(*args, **kwargs)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 416, in _packet_in_handler
+    inpacketcount = inpacketcount + 1
+UnboundLocalError: local variable 'inpacketcount' referenced before assignment
+May 13 17:18:33 faucet.exception ERROR    Unhandled exception, killing RYU
+Traceback (most recent call last):
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/util.py", line 51, in __koe
+    func(*args, **kwargs)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 417, in _packet_in_handler
+    print "Packet count = " + inpacketcount
+NameError: global name 'inpacketcount' is not defined
+May 13 17:31:51 faucet.exception ERROR    Unhandled exception, killing RYU
+Traceback (most recent call last):
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/util.py", line 51, in __koe
+    func(*args, **kwargs)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 414, in _packet_in_handler
+    self.inpacketcount += 1
+AttributeError: 'Faucet' object has no attribute 'inpacketcount'
+May 13 18:05:19 faucet.exception ERROR    Unhandled exception, killing RYU
+Traceback (most recent call last):
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/util.py", line 51, in __koe
+    func(*args, **kwargs)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 498, in handler_connect_or_disconnect
+    self.handler_datapath(ryu_dp)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 523, in handler_datapath
+    dp_id, discovered_up_port_nums)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 567, in datapath_connect
+    ofmsgs.extend(self._add_default_meters())
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 405, in _add_default_meters
+    burst_size=0))
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 340, in value_meteradd
+    bands=bands.copy) #added .copy?
+AttributeError: 'NoneType' object has no attribute 'copy'
+May 13 18:41:59 faucet.exception ERROR    Unhandled exception, killing RYU
+Traceback (most recent call last):
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/util.py", line 51, in __koe
+    func(*args, **kwargs)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 440, in _packet_in_handler
+    flowmods = valve.rcv_packet(dp_id, self.valves, in_port, vlan_vid, pkt)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 968, in rcv_packet
+    ofmsgs.extend(self._learn_host(valves, dp_id, pkt_meta))
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 884, in _learn_host
+    route_manager.add_host_fib_route_from_pkt(pkt_meta))
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve_route.py", line 405, in add_host_fib_route_from_pkt
+    ip_pkt = self._ip_pkt(pkt_meta.pkt)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve_route.py", line 462, in _ip_pkt
+    return pkt.get_protocol(ipv4.ipv4)
+  File "/usr/local/lib/python2.7/dist-packages/ryu/lib/packet/packet.py", line 143, in get_protocol
+    result = self.get_protocols(protocol)
+  File "/usr/local/lib/python2.7/dist-packages/ryu/lib/packet/packet.py", line 137, in get_protocols
+    return [p for p in self.protocols if isinstance(p, protocol)]
+  File "/usr/lib/python2.7/abc.py", line 131, in __instancecheck__
+    subclass = getattr(instance, '__class__', None)
+KeyboardInterrupt
+May 13 18:43:34 faucet.exception ERROR    Unhandled exception, killing RYU
+Traceback (most recent call last):
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/util.py", line 51, in __koe
+    func(*args, **kwargs)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 424, in _packet_in_handler
+    pkt = packet.Packet(msg.data)
+  File "/usr/local/lib/python2.7/dist-packages/ryu/lib/packet/packet.py", line 67, in __init__
+    self._parser(parse_cls)
+  File "/usr/local/lib/python2.7/dist-packages/ryu/lib/packet/packet.py", line 76, in _parser
+    proto, cls, rest_data = cls.parser(rest_data)
+  File "/usr/local/lib/python2.7/dist-packages/ryu/lib/packet/ethernet.py", line 60, in parser
+    return (cls(addrconv.mac.bin_to_text(dst),
+  File "/usr/local/lib/python2.7/dist-packages/ryu/lib/addrconv.py", line 31, in bin_to_text
+    **self._addr_kwargs))
+  File "/usr/local/lib/python2.7/dist-packages/netaddr/eui/__init__.py", line 726, in __str__
+    return self._module.int_to_str(self._value, self._dialect)
+  File "/usr/local/lib/python2.7/dist-packages/netaddr/strategy/eui48.py", line 212, in int_to_str
+    words = int_to_words(int_val, dialect)
+  File "/usr/local/lib/python2.7/dist-packages/netaddr/strategy/eui48.py", line 257, in int_to_words
+    return _int_to_words(int_val, dialect.word_size, dialect.num_words)
+  File "/usr/local/lib/python2.7/dist-packages/netaddr/strategy/__init__.py", line 78, in int_to_words
+    for _ in range(num_words):
+KeyboardInterrupt
+May 13 19:47:23 faucet.exception ERROR    Unhandled exception, killing RYU
+Traceback (most recent call last):
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/util.py", line 51, in __koe
+    func(*args, **kwargs)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 498, in handler_connect_or_disconnect
+    self.handler_datapath(ryu_dp)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 523, in handler_datapath
+    dp_id, discovered_up_port_nums)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 568, in datapath_connect
+    ofmsgs.extend(self._add_default_meters(dps[dp_id]))
+NameError: global name 'dps' is not defined
+May 13 20:09:27 faucet.exception ERROR    Unhandled exception, killing RYU
+Traceback (most recent call last):
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/util.py", line 51, in __koe
+    func(*args, **kwargs)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 498, in handler_connect_or_disconnect
+    self.handler_datapath(ryu_dp)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 523, in handler_datapath
+    dp_id, discovered_up_port_nums)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 568, in datapath_connect
+    ofmsgs.extend(self._add_default_meters(dps[dp_id]))
+NameError: global name 'dps' is not defined
+May 13 20:10:42 faucet.exception ERROR    Unhandled exception, killing RYU
+Traceback (most recent call last):
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/util.py", line 51, in __koe
+    func(*args, **kwargs)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 498, in handler_connect_or_disconnect
+    self.handler_datapath(ryu_dp)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 523, in handler_datapath
+    dp_id, discovered_up_port_nums)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 568, in datapath_connect
+    ofmsgs.extend(self._add_default_meters(dps[dp_id]))
+NameError: global name 'dps' is not defined
+May 13 20:20:36 faucet.exception ERROR    Unhandled exception, killing RYU
+Traceback (most recent call last):
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/util.py", line 51, in __koe
+    func(*args, **kwargs)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 498, in handler_connect_or_disconnect
+    self.handler_datapath(ryu_dp)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 523, in handler_datapath
+    dp_id, discovered_up_port_nums)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 568, in datapath_connect
+    ofmsgs.extend(self._add_default_meters())
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 406, in _add_default_meters
+    burst_size=0))
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 340, in value_meteradd
+    bands=bands)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve_of.py", line 313, in metermod
+    bands=band.append(valve_of.dropband(
+NameError: global name 'valve_of' is not defined
+May 13 20:22:24 faucet.exception ERROR    Unhandled exception, killing RYU
+Traceback (most recent call last):
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/util.py", line 51, in __koe
+    func(*args, **kwargs)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 498, in handler_connect_or_disconnect
+    self.handler_datapath(ryu_dp)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 523, in handler_datapath
+    dp_id, discovered_up_port_nums)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 568, in datapath_connect
+    ofmsgs.extend(self._add_default_meters())
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 406, in _add_default_meters
+    burst_size=0))
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 340, in value_meteradd
+    bands=bands)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve_of.py", line 313, in metermod
+    bands=band.append(self.dropband(
+NameError: global name 'self' is not defined
+May 13 20:22:55 faucet.exception ERROR    Unhandled exception, killing RYU
+Traceback (most recent call last):
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/util.py", line 51, in __koe
+    func(*args, **kwargs)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 498, in handler_connect_or_disconnect
+    self.handler_datapath(ryu_dp)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 523, in handler_datapath
+    dp_id, discovered_up_port_nums)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 568, in datapath_connect
+    ofmsgs.extend(self._add_default_meters())
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 406, in _add_default_meters
+    burst_size=0))
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 340, in value_meteradd
+    bands=bands)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve_of.py", line 313, in metermod
+    bands=band.append(self.dropband(
+NameError: global name 'self' is not defined
+May 13 20:24:01 faucet.exception ERROR    Unhandled exception, killing RYU
+Traceback (most recent call last):
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/util.py", line 51, in __koe
+    func(*args, **kwargs)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 498, in handler_connect_or_disconnect
+    self.handler_datapath(ryu_dp)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 523, in handler_datapath
+    dp_id, discovered_up_port_nums)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 568, in datapath_connect
+    ofmsgs.extend(self._add_default_meters())
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 406, in _add_default_meters
+    burst_size=0))
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 340, in value_meteradd
+    bands=bands)
+TypeError: metermod() takes at least 1 argument (5 given)
+May 13 20:26:00 faucet.exception ERROR    Unhandled exception, killing RYU
+Traceback (most recent call last):
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/util.py", line 51, in __koe
+    func(*args, **kwargs)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 498, in handler_connect_or_disconnect
+    self.handler_datapath(ryu_dp)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 523, in handler_datapath
+    dp_id, discovered_up_port_nums)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 568, in datapath_connect
+    ofmsgs.extend(self._add_default_meters())
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 406, in _add_default_meters
+    burst_size=0))
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 340, in value_meteradd
+    bands=bands)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve_of.py", line 313, in metermod
+    bands=band.append(self.dropband(
+NameError: global name 'self' is not defined

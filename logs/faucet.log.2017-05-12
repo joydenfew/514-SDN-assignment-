@@ -1,0 +1,217 @@
+May 12 00:11:09 faucet DEBUG    DPID 1 (0x1) connected
+May 12 00:11:09 faucet.valve INFO     Configuring DPID 1 (0x1)
+May 12 00:11:09 faucet.valve INFO     Delete VLAN vid:10 ports:1,2
+May 12 00:11:09 faucet.valve INFO     Configuring VLAN vid:10 ports:1,2
+May 12 00:11:09 faucet.valve INFO     Port 1 added
+May 12 00:11:09 faucet.valve INFO     Sending config for port 1
+May 12 00:11:09 faucet.valve INFO     Port 2 added
+May 12 00:11:09 faucet.valve INFO     Sending config for port 2
+May 12 00:11:10 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:00:00:00:00:00:01 in_port:1 vid:10
+May 12 00:11:10 faucet.valve INFO     learned 1 hosts on vlan 10
+May 12 00:11:10 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:00:00:00:00:00:01 in_port:1 vid:10
+May 12 00:11:10 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:d6:16:24:0d:ea:0b in_port:2 vid:10
+May 12 00:11:10 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:d6:16:24:0d:ea:0b in_port:2 vid:10
+May 12 00:11:10 faucet.valve INFO     learned 2 hosts on vlan 10
+May 12 00:11:10 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:fa:9e:83:29:71:24 in_port:1 vid:10
+May 12 00:11:10 faucet.valve INFO     learned 3 hosts on vlan 10
+May 12 00:11:10 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:fa:9e:83:29:71:24 in_port:1 vid:10
+May 12 00:11:10 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:00:00:00:00:00:02 in_port:2 vid:10
+May 12 00:11:10 faucet.valve INFO     learned 4 hosts on vlan 10
+May 12 00:11:10 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:00:00:00:00:00:02 in_port:2 vid:10
+May 12 00:11:52 faucet DEBUG    DPID 1 (0x1) disconnected
+May 12 00:11:52 faucet.valve WARNING  DPID 1 (0x1) down
+May 12 00:20:49 faucet DEBUG    DPID 1 (0x1) connected
+May 12 00:20:49 faucet.valve INFO     Configuring DPID 1 (0x1)
+May 12 00:20:49 faucet.valve INFO     Delete VLAN vid:10 ports:1,2
+May 12 00:20:49 faucet.valve INFO     Configuring VLAN vid:10 ports:1,2
+May 12 00:20:49 faucet.valve INFO     Port 1 added
+May 12 00:20:49 faucet.valve INFO     Sending config for port 1
+May 12 00:20:49 faucet.valve INFO     Port 2 added
+May 12 00:20:49 faucet.valve INFO     Sending config for port 2
+May 12 00:20:49 faucet ERROR    handler_features: unknown DPID 2 (0x2)
+May 12 00:20:49 faucet DEBUG    DPID 2 (0x2) connected
+May 12 00:20:49 faucet ERROR    handler_datapath: unknown DPID 2 (0x2)
+May 12 00:20:49 faucet ERROR    handler_features: unknown DPID 3 (0x3)
+May 12 00:20:49 faucet DEBUG    DPID 3 (0x3) connected
+May 12 00:20:49 faucet ERROR    handler_datapath: unknown DPID 3 (0x3)
+May 12 00:20:49 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:e6:1c:22:f7:75:83 in_port:2 vid:10
+May 12 00:20:49 faucet.valve INFO     learned 5 hosts on vlan 10
+May 12 00:20:49 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:e6:1c:22:f7:75:83 in_port:2 vid:10
+May 12 00:20:49 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:3e:77:09:53:f8:8f in_port:2 vid:10
+May 12 00:20:49 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:3e:77:09:53:f8:8f in_port:2 vid:10
+May 12 00:20:49 faucet.valve INFO     learned 6 hosts on vlan 10
+May 12 00:20:49 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:2e:b8:c6:ca:48:05 in_port:1 vid:10
+May 12 00:20:49 faucet.valve INFO     learned 7 hosts on vlan 10
+May 12 00:20:50 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:00:00:00:00:00:01 in_port:1 vid:10
+May 12 00:20:50 faucet.valve INFO     learned 7 hosts on vlan 10
+May 12 00:20:50 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:00:00:00:00:00:01 in_port:1 vid:10
+May 12 00:20:53 faucet.valve INFO     expiring host fa:9e:83:29:71:24 from vlan 10
+May 12 00:20:53 faucet.valve INFO     expiring host 00:00:00:00:00:02 from vlan 10
+May 12 00:20:53 faucet.valve INFO     expiring host d6:16:24:0d:ea:0b from vlan 10
+May 12 00:20:53 faucet.valve INFO     4 recently active hosts on vlan 10
+May 12 00:25:51 faucet.valve INFO     expiring host 00:00:00:00:00:01 from vlan 10
+May 12 00:25:51 faucet.valve INFO     expiring host 3e:77:09:53:f8:8f from vlan 10
+May 12 00:25:51 faucet.valve INFO     expiring host e6:1c:22:f7:75:83 from vlan 10
+May 12 00:25:51 faucet.valve INFO     expiring host 2e:b8:c6:ca:48:05 from vlan 10
+May 12 00:25:51 faucet.valve INFO     0 recently active hosts on vlan 10
+May 12 00:26:18 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:00:00:00:00:00:01 in_port:1 vid:10
+May 12 00:26:18 faucet.valve INFO     learned 1 hosts on vlan 10
+May 12 00:27:13 faucet ERROR    handler_connect_or_disconnect: unknown DPID 3 (0x3)
+May 12 00:27:13 faucet ERROR    handler_connect_or_disconnect: unknown DPID 2 (0x2)
+May 12 00:27:13 faucet DEBUG    DPID 1 (0x1) disconnected
+May 12 00:27:13 faucet.valve WARNING  DPID 1 (0x1) down
+May 12 00:27:17 faucet DEBUG    DPID 1 (0x1) connected
+May 12 00:27:17 faucet.valve INFO     Configuring DPID 1 (0x1)
+May 12 00:27:17 faucet.valve INFO     Delete VLAN vid:10 ports:1,2
+May 12 00:27:17 faucet.valve INFO     Configuring VLAN vid:10 ports:1,2
+May 12 00:27:17 faucet.valve INFO     Port 1 added
+May 12 00:27:17 faucet.valve INFO     Sending config for port 1
+May 12 00:27:17 faucet.valve INFO     Port 2 added
+May 12 00:27:17 faucet.valve INFO     Sending config for port 2
+May 12 00:27:18 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:00:00:00:00:00:01 in_port:1 vid:10
+May 12 00:27:18 faucet.valve INFO     learned 1 hosts on vlan 10
+May 12 00:27:18 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:00:00:00:00:00:01 in_port:1 vid:10
+May 12 00:27:18 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:a6:85:2a:9c:aa:ad in_port:2 vid:10
+May 12 00:27:18 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:a6:85:2a:9c:aa:ad in_port:2 vid:10
+May 12 00:27:18 faucet.valve INFO     learned 2 hosts on vlan 10
+May 12 00:27:18 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:00:00:00:00:00:02 in_port:2 vid:10
+May 12 00:27:18 faucet.valve INFO     learned 3 hosts on vlan 10
+May 12 00:27:18 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:1a:19:a9:53:35:d5 in_port:1 vid:10
+May 12 00:27:18 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:1a:19:a9:53:35:d5 in_port:1 vid:10
+May 12 00:27:18 faucet.valve INFO     learned 4 hosts on vlan 10
+May 12 00:28:06 faucet DEBUG    DPID 1 (0x1) disconnected
+May 12 00:28:06 faucet.valve WARNING  DPID 1 (0x1) down
+May 12 00:28:08 faucet DEBUG    DPID 1 (0x1) connected
+May 12 00:28:08 faucet.valve INFO     Configuring DPID 1 (0x1)
+May 12 00:28:08 faucet.valve INFO     Delete VLAN vid:10 ports:1,2
+May 12 00:28:08 faucet.valve INFO     Configuring VLAN vid:10 ports:1,2
+May 12 00:28:08 faucet.valve INFO     Port 1 added
+May 12 00:28:08 faucet.valve INFO     Sending config for port 1
+May 12 00:28:08 faucet.valve INFO     Port 2 added
+May 12 00:28:08 faucet.valve INFO     Sending config for port 2
+May 12 00:28:08 faucet ERROR    handler_features: unknown DPID 2 (0x2)
+May 12 00:28:08 faucet ERROR    handler_features: unknown DPID 3 (0x3)
+May 12 00:28:08 faucet DEBUG    DPID 2 (0x2) connected
+May 12 00:28:08 faucet ERROR    handler_datapath: unknown DPID 2 (0x2)
+May 12 00:28:08 faucet DEBUG    DPID 3 (0x3) connected
+May 12 00:28:08 faucet ERROR    handler_datapath: unknown DPID 3 (0x3)
+May 12 00:28:08 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:7a:8f:83:58:70:a6 in_port:2 vid:10
+May 12 00:28:08 faucet.valve INFO     learned 5 hosts on vlan 10
+May 12 00:28:08 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:7a:8f:83:58:70:a6 in_port:2 vid:10
+May 12 00:28:09 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:00:00:00:00:00:01 in_port:1 vid:10
+May 12 00:28:09 faucet.valve INFO     learned 5 hosts on vlan 10
+May 12 00:28:09 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:32:7a:83:44:86:b1 in_port:2 vid:10
+May 12 00:28:09 faucet.valve INFO     learned 6 hosts on vlan 10
+May 12 00:28:09 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:32:7a:83:44:86:b1 in_port:2 vid:10
+May 12 00:28:12 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:2a:4e:2f:f9:11:28 in_port:1 vid:10
+May 12 00:28:12 faucet.valve INFO     learned 7 hosts on vlan 10
+May 12 00:29:05 faucet ERROR    handler_connect_or_disconnect: unknown DPID 3 (0x3)
+May 12 00:29:05 faucet ERROR    handler_connect_or_disconnect: unknown DPID 2 (0x2)
+May 12 00:29:05 faucet DEBUG    DPID 1 (0x1) disconnected
+May 12 00:29:05 faucet.valve WARNING  DPID 1 (0x1) down
+May 12 00:29:57 faucet ERROR    handler_features: unknown DPID 3 (0x3)
+May 12 00:29:57 faucet DEBUG    DPID 3 (0x3) connected
+May 12 00:29:57 faucet ERROR    handler_datapath: unknown DPID 3 (0x3)
+May 12 00:29:58 faucet ERROR    handler_features: unknown DPID 4 (0x4)
+May 12 00:29:58 faucet DEBUG    DPID 4 (0x4) connected
+May 12 00:29:58 faucet ERROR    handler_datapath: unknown DPID 4 (0x4)
+May 12 00:37:43 faucet ERROR    handler_connect_or_disconnect: unknown DPID 4 (0x4)
+May 12 00:37:43 faucet ERROR    handler_connect_or_disconnect: unknown DPID 3 (0x3)
+May 12 00:37:57 faucet ERROR    handler_features: unknown DPID 2 (0x2)
+May 12 00:37:57 faucet DEBUG    DPID 1 (0x1) connected
+May 12 00:37:57 faucet.valve INFO     Configuring DPID 1 (0x1)
+May 12 00:37:57 faucet.valve INFO     Delete VLAN vid:10 ports:1,2
+May 12 00:37:57 faucet.valve INFO     Configuring VLAN vid:10 ports:1,2
+May 12 00:37:57 faucet.valve INFO     Port 1 added
+May 12 00:37:57 faucet.valve INFO     Sending config for port 1
+May 12 00:37:57 faucet.valve INFO     Port 2 added
+May 12 00:37:57 faucet.valve INFO     Sending config for port 2
+May 12 00:37:57 faucet DEBUG    DPID 2 (0x2) connected
+May 12 00:37:57 faucet ERROR    handler_datapath: unknown DPID 2 (0x2)
+May 12 00:37:57 faucet ERROR    handler_features: unknown DPID 3 (0x3)
+May 12 00:37:57 faucet DEBUG    DPID 3 (0x3) connected
+May 12 00:37:57 faucet ERROR    handler_datapath: unknown DPID 3 (0x3)
+May 12 00:37:57 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:da:80:39:25:15:24 in_port:1 vid:10
+May 12 00:37:57 faucet.valve INFO     learned 8 hosts on vlan 10
+May 12 00:37:57 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:da:80:39:25:15:24 in_port:1 vid:10
+May 12 00:37:57 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:4a:61:bc:81:6f:4f in_port:2 vid:10
+May 12 00:37:57 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:12:21:ce:66:c1:94 in_port:2 vid:10
+May 12 00:37:57 faucet.valve INFO     learned 9 hosts on vlan 10
+May 12 00:37:57 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:12:21:ce:66:c1:94 in_port:2 vid:10
+May 12 00:37:57 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:00:00:00:00:00:01 in_port:1 vid:10
+May 12 00:37:57 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:00:00:00:00:00:01 in_port:1 vid:10
+May 12 00:37:57 faucet.valve INFO     learned 9 hosts on vlan 10
+May 12 00:37:57 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:00:00:00:00:00:01 in_port:1 vid:10
+May 12 00:38:01 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:4a:61:bc:81:6f:4f in_port:2 vid:10
+May 12 00:38:01 faucet.valve INFO     learned 10 hosts on vlan 10
+May 12 00:38:02 faucet.valve INFO     expiring host 00:00:00:00:00:02 from vlan 10
+May 12 00:38:02 faucet.valve INFO     expiring host 7a:8f:83:58:70:a6 from vlan 10
+May 12 00:38:02 faucet.valve INFO     expiring host 2a:4e:2f:f9:11:28 from vlan 10
+May 12 00:38:02 faucet.valve INFO     expiring host 1a:19:a9:53:35:d5 from vlan 10
+May 12 00:38:02 faucet.valve INFO     expiring host a6:85:2a:9c:aa:ad from vlan 10
+May 12 00:38:02 faucet.valve INFO     expiring host 32:7a:83:44:86:b1 from vlan 10
+May 12 00:38:02 faucet.valve INFO     4 recently active hosts on vlan 10
+May 12 00:39:15 faucet ERROR    handler_connect_or_disconnect: unknown DPID 3 (0x3)
+May 12 00:39:15 faucet ERROR    handler_connect_or_disconnect: unknown DPID 2 (0x2)
+May 12 00:39:15 faucet DEBUG    DPID 1 (0x1) disconnected
+May 12 00:39:15 faucet.valve WARNING  DPID 1 (0x1) down
+May 12 00:39:27 faucet DEBUG    DPID 1 (0x1) connected
+May 12 00:39:27 faucet.valve INFO     Configuring DPID 1 (0x1)
+May 12 00:39:27 faucet.valve INFO     Delete VLAN vid:10 ports:1,2
+May 12 00:39:27 faucet.valve INFO     Configuring VLAN vid:10 ports:1,2
+May 12 00:39:27 faucet.valve INFO     Port 1 added
+May 12 00:39:27 faucet.valve INFO     Sending config for port 1
+May 12 00:39:27 faucet.valve INFO     Port 2 added
+May 12 00:39:27 faucet.valve INFO     Sending config for port 2
+May 12 00:39:27 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:ee:30:17:1c:5b:16 in_port:1 vid:10
+May 12 00:39:27 faucet.valve INFO     learned 5 hosts on vlan 10
+May 12 00:39:27 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:ee:30:17:1c:5b:16 in_port:1 vid:10
+May 12 00:39:27 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:00:00:00:00:00:02 in_port:2 vid:10
+May 12 00:39:27 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:00:00:00:00:00:02 in_port:2 vid:10
+May 12 00:39:27 faucet.valve INFO     learned 6 hosts on vlan 10
+May 12 00:39:27 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:c2:96:d1:de:81:fc in_port:2 vid:10
+May 12 00:39:27 faucet.valve INFO     learned 7 hosts on vlan 10
+May 12 00:39:27 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:c2:96:d1:de:81:fc in_port:2 vid:10
+May 12 00:39:27 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:00:00:00:00:00:01 in_port:1 vid:10
+May 12 00:39:27 faucet.valve INFO     learned 7 hosts on vlan 10
+May 12 00:39:27 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:00:00:00:00:00:01 in_port:1 vid:10
+May 12 00:44:11 faucet DEBUG    DPID 1 (0x1) connected
+May 12 00:44:11 faucet.valve INFO     Configuring DPID 1 (0x1)
+May 12 00:44:11 faucet.valve INFO     Delete VLAN vid:10 ports:1,2
+May 12 00:44:11 faucet.valve INFO     Configuring VLAN vid:10 ports:1,2
+May 12 00:44:11 faucet.valve INFO     Port 1 added
+May 12 00:44:11 faucet.valve INFO     Sending config for port 1
+May 12 00:44:11 faucet.valve INFO     Port 2 added
+May 12 00:44:11 faucet.valve INFO     Sending config for port 2
+May 12 00:44:12 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:00:00:00:00:00:02 in_port:2 vid:10
+May 12 00:44:12 faucet.valve INFO     learned 1 hosts on vlan 10
+May 12 00:44:12 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:00:00:00:00:00:02 in_port:2 vid:10
+May 12 00:44:12 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:a6:e6:48:18:66:65 in_port:2 vid:10
+May 12 00:44:12 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:a6:e6:48:18:66:65 in_port:2 vid:10
+May 12 00:44:12 faucet.valve INFO     learned 2 hosts on vlan 10
+May 12 00:44:12 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:00:00:00:00:00:01 in_port:1 vid:10
+May 12 00:44:12 faucet.valve INFO     learned 3 hosts on vlan 10
+May 12 00:44:12 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:00:00:00:00:00:01 in_port:1 vid:10
+May 12 00:44:12 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:3e:88:0e:e2:1b:0e in_port:1 vid:10
+May 12 00:44:12 faucet.valve INFO     learned 4 hosts on vlan 10
+May 12 00:44:12 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:3e:88:0e:e2:1b:0e in_port:1 vid:10
+May 12 09:17:32 faucet DEBUG    DPID 1 (0x1) connected
+May 12 09:17:32 faucet.valve INFO     Configuring DPID 1 (0x1)
+May 12 09:17:32 faucet.valve INFO     Delete VLAN vid:10 ports:1,2
+May 12 09:17:32 faucet.valve INFO     Configuring VLAN vid:10 ports:1,2
+May 12 09:17:32 faucet.valve INFO     Port 1 added
+May 12 09:17:32 faucet.valve INFO     Sending config for port 1
+May 12 09:17:32 faucet.valve INFO     Port 2 added
+May 12 09:17:32 faucet.valve INFO     Sending config for port 2
+May 12 09:17:32 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:7e:bd:6c:1c:a2:1f in_port:1 vid:10
+May 12 09:17:32 faucet.valve INFO     learned 1 hosts on vlan 10
+May 12 09:17:32 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:7e:bd:6c:1c:a2:1f in_port:1 vid:10
+May 12 09:17:32 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:aa:c2:8b:75:f4:e1 in_port:2 vid:10
+May 12 09:17:32 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:aa:c2:8b:75:f4:e1 in_port:2 vid:10
+May 12 09:17:32 faucet.valve INFO     learned 2 hosts on vlan 10
+May 12 09:17:33 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:00:00:00:00:00:01 in_port:1 vid:10
+May 12 09:17:33 faucet.valve INFO     learned 3 hosts on vlan 10
+May 12 09:17:33 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:00:00:00:00:00:01 in_port:1 vid:10
+May 12 09:17:33 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:00:00:00:00:00:02 in_port:2 vid:10
+May 12 09:17:33 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:00:00:00:00:00:02 in_port:2 vid:10
+May 12 09:17:33 faucet.valve INFO     learned 4 hosts on vlan 10
