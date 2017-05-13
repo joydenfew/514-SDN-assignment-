@@ -65,12 +65,6 @@ def is_flowdel(ofmsg):
         return True
     return False
 
-# Modified by Jayden Hewer (might yet me not required)
-def is_flowmet(ofmsg):
-    if(is_flowmet(ofmsg) and (ofmsg.command == ofp.OFPT_METER_MOD)):
-        return True
-    return False
-
 def apply_actions(actions):
     """Return instruction that applies action list.
 
