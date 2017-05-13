@@ -295,18 +295,34 @@ def flowmod(cookie, command, table_id, priority, out_port, out_group,
         idle_timeout=idle_timeout)
 
 # Modified by Jayden Hewer
-def metermod(datapath=None, command=ofp.OFPMC_ADD, flags=ofp.OFPMF_KBPS, meter_id=1, bands=None):
+def metermod(bands=None, datapath=None, command=ofp.OFPMC_ADD, flags=ofp.OFPMF_KBPS, meter_id=1):
+    print "ASSIGNMENT DEMO: meteradded"
+    
+    band=[]
+    band.append(dropband(
+        rate=1,
+        burst_size=0,
+        )
+    )
+
+    if bands is None:
+        print "NO BANDS"
+    if datapath is None:
+        print "NO PATH"
+    
     return parser.OFPMeterMod(
         datapath=None,
-        command=command,
-        flags=flags,
-        meter_id=meter_id,
+        command=ofp.OFPMC_ADD,
+        flags=ofp.OFPMF_PKTPS,
+        meter_id=ofp.OFPM_CONTROLLER,
         bands=bands)
 
-def dropband(rate=0, burst_size=0):
+def dropband(rate=0, burst_size=0, len=16):
     return parser.OFPMeterBandDrop(
+        len_=len,
         rate=rate,
         burst_size=burst_size
+
     )   
 
 

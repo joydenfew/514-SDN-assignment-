@@ -411,6 +411,9 @@ class Faucet(app_manager.RyuApp):
         ryu_dp = msg.datapath
         dp_id = ryu_dp.id
 
+        #self.inpacketcount += 1
+        print "Packet in"
+
         if not dp_id in self.valves:
             self.logger.error('_packet_in_handler: unknown %s', dpid_log(dp_id))
             return
@@ -519,6 +522,7 @@ class Faucet(app_manager.RyuApp):
             flowmods = self.valves[dp_id].datapath_connect(
                 dp_id, discovered_up_port_nums)
             self._send_flow_msgs(ryu_dp, flowmods)
+            print flowmods
         else:
             self.logger.error('handler_datapath: unknown %s', dpid_log(dp_id))
 

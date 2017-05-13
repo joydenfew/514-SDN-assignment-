@@ -329,13 +329,19 @@ class Valve(object):
             inst=[])
 
 
+
     def value_meteradd(self, flags, meter_id, bands):
-        #Jayden Hewer
+        # calls metermod to modify the meter (default is to add)
+        print "BANDS ARE: "
+        print bands
 
         return valve_of.metermod(
+            datapath=self.dp,
+            command=ofp.OFPMC_ADD,
             flags=flags,
             meter_id=meter_id,
             bands=bands)
+            # (Jayden Hewer)
 
 
     def valve_flowcontroller(self, table_id, match=None, priority=None,
@@ -393,16 +399,19 @@ class Valve(object):
     def _add_default_meters(self):
         """Adds in the default meter to rate Limit packets to the controller"""
         ofmsgs = []
-        bands = []
+        band = []
+
+        band.append(valve_of.dropband(
+            rate=1,
+            burst_size=0))
+        
+
         #for now just one but add more if required
         ofmsgs.append(self.value_meteradd(
-            flags=ofp.OFPMF_KBPS,
+            flags=ofp.OFPMF_PKTPS,
             meter_id=ofp.OFPM_CONTROLLER,
-            bands=bands.append(valve_of.dropband(
-                rate=1,
-                burst_size=0))
-            )
-        )
+            bands=band
+        ))
         return ofmsgs
     
 
@@ -561,8 +570,6 @@ class Valve(object):
         self.logger.info('Configuring %s', util.dpid_log(dp_id))
         ofmsgs = []
         ofmsgs.extend(self._add_default_flows())
-        #JAyden Hewer
-        ofmsgs.extend(self._add_default_meters())
         changed_ports = set([])
         for port_no in discovered_up_port_nums:
             if valve_of.ignore_port(port_no):
@@ -572,6 +579,8 @@ class Valve(object):
         changes = ([], changed_ports, [], changed_vlans)
         ofmsgs.extend(self._apply_config_changes(self.dp, changes))
         ofmsgs.extend(self._add_ports_and_vlans(discovered_up_port_nums))
+        # Add the default meter to ofmsgs (Jayden Hewer)
+        ofmsgs.extend(self._add_default_meters())
         self.dp.running = True
         return ofmsgs
 
