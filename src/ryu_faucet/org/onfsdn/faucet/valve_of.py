@@ -65,6 +65,11 @@ def is_flowdel(ofmsg):
         return True
     return False
 
+# Modified by Jayden Hewer (might yet me not required)
+def is_flowmet(ofmsg):
+    if(is_flowmet(ofmsg) and (ofmsg.command == ofp.OFPT_METER_MOD)):
+        return True
+    return False
 
 def apply_actions(actions):
     """Return instruction that applies action list.
@@ -288,6 +293,21 @@ def flowmod(cookie, command, table_id, priority, out_port, out_group,
         instructions=inst,
         hard_timeout=hard_timeout,
         idle_timeout=idle_timeout)
+
+# Modified by Jayden Hewer
+def metermod(datapath=None, command=ofp.OFPMC_ADD, flags=ofp.OFPMF_KBPS, meter_id=1, bands=None):
+    return parser.OFPMeterMod(
+        datapath=None,
+        command=command,
+        flags=flags,
+        meter_id=meter_id,
+        bands=bands)
+
+def dropband(rate=0, burst_size=0):
+    return parser.OFPMeterBandDrop(
+        rate=rate,
+        burst_size=burst_size
+    )   
 
 
 def group_act(group_id):

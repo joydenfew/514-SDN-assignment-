@@ -26,6 +26,7 @@ from watcher_conf import WatcherConf
 def get_logger(logname):
     return logging.getLogger(logname + '.config')
 
+#reads in the faucet.yaml and returns it as a python object
 def read_config(config_file, logname):
     logger = get_logger(logname)
     try:
@@ -42,6 +43,7 @@ def config_file_hash(config_file_name):
 
 def dp_parser(config_file, logname):
     logger = get_logger(logname)
+    #gets the yaml object
     conf = read_config(config_file, logname)
     if conf is None:
         return None
@@ -118,6 +120,7 @@ def _dp_include(config_hashes, parent_file, config_file, dps_conf, vlans_conf, a
 
     new_dps_conf.update(conf.pop('dps', {}))
     new_vlans_conf.update(conf.pop('vlans', {}))
+    # acl config updated here
     new_acls_conf.update(conf.pop('acls', {}))
 
     for include_file in conf.pop('include', []):
@@ -230,8 +233,10 @@ def _dp_parser_v2(conf, config_file, logname):
         for a_identifier, acl_conf in acls_conf.iteritems():
             # TODO: turn this into an object
             dp.add_acl(a_identifier, acl_conf)
+        # Once the the datapath (dp) object is created containing everything from the yaml file it then appends to the datapaths object    
         dps.append(dp)
 
+    # returns an array of data paths
     return (config_hashes, dps)
 
 def watcher_parser(config_file, logname):

@@ -283,6 +283,7 @@ class Valve(object):
             self.dp.eth_dst_table,
             self.dp.flood_table)
 
+
     def valve_flowmod(self, table_id, match=None, priority=None,
                       inst=None, command=ofp.OFPFC_ADD, out_port=0,
                       out_group=0, hard_timeout=0, idle_timeout=0):
@@ -326,6 +327,16 @@ class Valve(object):
             priority=priority,
             hard_timeout=hard_timeout,
             inst=[])
+
+
+    def value_meteradd(self, flags, meter_id, bands):
+        #Jayden Hewer
+
+        return valve_of.metermod(
+            flags=flags,
+            meter_id=meter_id,
+            bands=bands)
+
 
     def valve_flowcontroller(self, table_id, match=None, priority=None,
                              inst=None):
@@ -377,6 +388,23 @@ class Valve(object):
             in_port_match = self.valve_in_match(table_id, in_port=port.number)
             ofmsgs.extend(self.valve_flowdel(table_id, in_port_match))
         return ofmsgs
+
+    # Jayden Hewer 
+    def _add_default_meters(self):
+        """Adds in the default meter to rate Limit packets to the controller"""
+        ofmsgs = []
+        bands = []
+        #for now just one but add more if required
+        ofmsgs.append(self.value_meteradd(
+            flags=ofp.OFPMF_KBPS,
+            meter_id=ofp.OFPM_CONTROLLER,
+            bands=bands.append(valve_of.dropband(
+                rate=1,
+                burst_size=0))
+            )
+        )
+        return ofmsgs
+    
 
     def _add_default_drop_flows(self):
         """Add default drop rules on all FAUCET tables."""
@@ -533,6 +561,8 @@ class Valve(object):
         self.logger.info('Configuring %s', util.dpid_log(dp_id))
         ofmsgs = []
         ofmsgs.extend(self._add_default_flows())
+        #JAyden Hewer
+        ofmsgs.extend(self._add_default_meters())
         changed_ports = set([])
         for port_no in discovered_up_port_nums:
             if valve_of.ignore_port(port_no):
