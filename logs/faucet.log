@@ -246,3 +246,8 @@ May 14 09:33:34 faucet.valve INFO     learned 3 hosts on vlan 10
 May 14 09:33:34 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:22:23:b0:b0:06:6d in_port:2 vid:10
 May 14 09:33:34 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:22:23:b0:b0:06:6d in_port:2 vid:10
 May 14 09:33:34 faucet.valve INFO     learned 4 hosts on vlan 10
+May 14 09:38:39 faucet.valve INFO     expiring host 00:00:00:00:00:02 from vlan 10
+May 14 09:38:39 faucet.valve INFO     expiring host 00:00:00:00:00:01 from vlan 10
+May 14 09:38:39 faucet.valve INFO     expiring host 0a:45:4e:df:46:9d from vlan 10
+May 14 09:38:39 faucet.valve INFO     expiring host 22:23:b0:b0:06:6d from vlan 10
+May 14 09:38:39 faucet.valve INFO     0 recently active hosts on vlan 10
