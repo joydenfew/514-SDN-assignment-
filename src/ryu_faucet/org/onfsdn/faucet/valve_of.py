@@ -86,6 +86,10 @@ def goto_table(table_id):
     """
     return parser.OFPInstructionGotoTable(table_id)
 
+def set_meter(meter_id):
+    #instruction to add meter
+    return parser.OFPInstructionMeter(meter_id)
+
 
 def set_eth_src(eth_src):
     """Return action to set source Ethernet MAC address.

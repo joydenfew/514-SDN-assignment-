@@ -60,3 +60,36 @@ Traceback (most recent call last):
   File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve_of.py", line 325, in dropband
     burst_size=burst_size
 TypeError: __init__() got an unexpected keyword argument 'len'
+May 14 11:13:15 faucet.exception ERROR    Unhandled exception, killing RYU
+Traceback (most recent call last):
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/util.py", line 51, in __koe
+    func(*args, **kwargs)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 495, in handler_connect_or_disconnect
+    self.handler_datapath(ryu_dp)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 521, in handler_datapath
+    self._send_flow_msgs(ryu_dp, flowmods)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 320, in _send_flow_msgs
+    flow_msg.datapath = ryu_dp
+AttributeError: 'NoneType' object has no attribute 'datapath'
+May 14 11:15:31 faucet.exception ERROR    Unhandled exception, killing RYU
+Traceback (most recent call last):
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/util.py", line 51, in __koe
+    func(*args, **kwargs)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 495, in handler_connect_or_disconnect
+    self.handler_datapath(ryu_dp)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 521, in handler_datapath
+    self._send_flow_msgs(ryu_dp, flowmods)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 320, in _send_flow_msgs
+    flow_msg.datapath = ryu_dp
+AttributeError: 'NoneType' object has no attribute 'datapath'
+May 14 11:25:37 faucet.exception ERROR    Unhandled exception, killing RYU
+Traceback (most recent call last):
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/util.py", line 51, in __koe
+    func(*args, **kwargs)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 495, in handler_connect_or_disconnect
+    self.handler_datapath(ryu_dp)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 521, in handler_datapath
+    self._send_flow_msgs(ryu_dp, flowmods)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 320, in _send_flow_msgs
+    flow_msg.datapath = ryu_dp
+AttributeError: 'NoneType' object has no attribute 'datapath'

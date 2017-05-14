@@ -251,3 +251,144 @@ May 14 09:38:39 faucet.valve INFO     expiring host 00:00:00:00:00:01 from vlan 
 May 14 09:38:39 faucet.valve INFO     expiring host 0a:45:4e:df:46:9d from vlan 10
 May 14 09:38:39 faucet.valve INFO     expiring host 22:23:b0:b0:06:6d from vlan 10
 May 14 09:38:39 faucet.valve INFO     0 recently active hosts on vlan 10
+May 14 10:59:34 faucet DEBUG    DPID 1 (0x1) connected
+May 14 10:59:34 faucet.valve INFO     Configuring DPID 1 (0x1)
+May 14 10:59:34 faucet.valve INFO     Delete VLAN vid:10 ports:1,2
+May 14 10:59:34 faucet.valve INFO     Configuring VLAN vid:10 ports:1,2
+May 14 10:59:34 faucet.valve INFO     Port 1 added
+May 14 10:59:34 faucet.valve INFO     Sending config for port 1
+May 14 10:59:34 faucet.valve INFO     Port 2 added
+May 14 10:59:34 faucet.valve INFO     Sending config for port 2
+May 14 10:59:34 faucet ERROR    Got OFError: version=0x4,msg_type=0x1,msg_len=0x4c,xid=0x29734a05,OFPErrorMsg(code=3,data='\x04\x0e\x00`)sJ\x05\x00\x00\x00\x00Z\xdc\x15\xc0\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00\x00\x00#(\xff\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x04\x00\x00\x00\x00\x00\x04\x00\x18\x00\x00\x00\x00',type=12)
+May 14 10:59:34 faucet ERROR    Got OFError: version=0x4,msg_type=0x1,msg_len=0x2c,xid=0x29734a06,OFPErrorMsg(code=3,data='\x04\x1d\x00 )sJ\x06\x00\x00\x00\x02\xff\xff\xff\xfe\x00\x01\x00\x10\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00',type=12)
+May 14 11:03:56 faucet DEBUG    DPID 1 (0x1) connected
+May 14 11:03:56 faucet.valve INFO     Configuring DPID 1 (0x1)
+May 14 11:03:56 faucet.valve INFO     Delete VLAN vid:10 ports:1,2
+May 14 11:03:56 faucet.valve INFO     Configuring VLAN vid:10 ports:1,2
+May 14 11:03:56 faucet.valve INFO     Port 1 added
+May 14 11:03:56 faucet.valve INFO     Sending config for port 1
+May 14 11:03:56 faucet.valve INFO     Port 2 added
+May 14 11:03:56 faucet.valve INFO     Sending config for port 2
+May 14 11:03:56 faucet ERROR    Got OFError: version=0x4,msg_type=0x1,msg_len=0x4c,xid=0xf9aaf24f,OFPErrorMsg(code=3,data='\x04\x0e\x00`\xf9\xaa\xf2O\x00\x00\x00\x00Z\xdc\x15\xc0\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00\x00\x00#(\xff\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x04\x00\x00\x00\x00\x00\x04\x00\x18\x00\x00\x00\x00',type=12)
+May 14 11:03:56 faucet ERROR    Got OFError: version=0x4,msg_type=0x1,msg_len=0x2c,xid=0xf9aaf250,OFPErrorMsg(code=3,data='\x04\x1d\x00 \xf9\xaa\xf2P\x00\x00\x00\x02\xff\xff\xff\xfe\x00\x01\x00\x10\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00',type=12)
+May 14 11:10:15 faucet DEBUG    DPID 1 (0x1) connected
+May 14 11:10:15 faucet.valve INFO     Configuring DPID 1 (0x1)
+May 14 11:10:15 faucet.valve INFO     Delete VLAN vid:10 ports:1,2
+May 14 11:10:15 faucet.valve INFO     Configuring VLAN vid:10 ports:1,2
+May 14 11:10:15 faucet.valve INFO     Port 1 added
+May 14 11:10:15 faucet.valve INFO     Sending config for port 1
+May 14 11:10:15 faucet.valve INFO     Port 2 added
+May 14 11:10:15 faucet.valve INFO     Sending config for port 2
+May 14 11:10:15 faucet ERROR    Got OFError: version=0x4,msg_type=0x1,msg_len=0x4c,xid=0x3e22e6df,OFPErrorMsg(code=3,data='\x04\x0e\x00`>"\xe6\xdf\x00\x00\x00\x00Z\xdc\x15\xc0\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00\x00\x00#(\xff\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x04\x00\x00\x00\x00\x00\x04\x00\x18\x00\x00\x00\x00',type=12)
+May 14 11:10:15 faucet ERROR    Got OFError: version=0x4,msg_type=0x1,msg_len=0x2c,xid=0x3e22e6e0,OFPErrorMsg(code=3,data='\x04\x1d\x00 >"\xe6\xe0\x00\x00\x00\x02\xff\xff\xff\xfe\x00\x01\x00\x10\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00',type=12)
+May 14 11:13:15 faucet DEBUG    DPID 1 (0x1) connected
+May 14 11:13:15 faucet.valve INFO     Configuring DPID 1 (0x1)
+May 14 11:13:15 faucet.valve INFO     Delete VLAN vid:10 ports:1,2
+May 14 11:13:15 faucet.valve INFO     Configuring VLAN vid:10 ports:1,2
+May 14 11:13:15 faucet.valve INFO     Port 1 added
+May 14 11:13:15 faucet.valve INFO     Sending config for port 1
+May 14 11:13:15 faucet.valve INFO     Port 2 added
+May 14 11:13:15 faucet.valve INFO     Sending config for port 2
+May 14 11:13:15 faucet.exception ERROR    Unhandled exception, killing RYU
+Traceback (most recent call last):
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/util.py", line 51, in __koe
+    func(*args, **kwargs)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 495, in handler_connect_or_disconnect
+    self.handler_datapath(ryu_dp)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 521, in handler_datapath
+    self._send_flow_msgs(ryu_dp, flowmods)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 320, in _send_flow_msgs
+    flow_msg.datapath = ryu_dp
+AttributeError: 'NoneType' object has no attribute 'datapath'
+May 14 11:15:31 faucet DEBUG    DPID 1 (0x1) connected
+May 14 11:15:31 faucet.valve INFO     Configuring DPID 1 (0x1)
+May 14 11:15:31 faucet.valve INFO     Delete VLAN vid:10 ports:1,2
+May 14 11:15:31 faucet.valve INFO     Configuring VLAN vid:10 ports:1,2
+May 14 11:15:31 faucet.valve INFO     Port 1 added
+May 14 11:15:31 faucet.valve INFO     Sending config for port 1
+May 14 11:15:31 faucet.valve INFO     Port 2 added
+May 14 11:15:31 faucet.valve INFO     Sending config for port 2
+May 14 11:15:31 faucet.exception ERROR    Unhandled exception, killing RYU
+Traceback (most recent call last):
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/util.py", line 51, in __koe
+    func(*args, **kwargs)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 495, in handler_connect_or_disconnect
+    self.handler_datapath(ryu_dp)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 521, in handler_datapath
+    self._send_flow_msgs(ryu_dp, flowmods)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 320, in _send_flow_msgs
+    flow_msg.datapath = ryu_dp
+AttributeError: 'NoneType' object has no attribute 'datapath'
+May 14 11:25:37 faucet DEBUG    DPID 1 (0x1) connected
+May 14 11:25:37 faucet.valve INFO     Configuring DPID 1 (0x1)
+May 14 11:25:37 faucet.valve INFO     Delete VLAN vid:10 ports:1,2
+May 14 11:25:37 faucet.valve INFO     Configuring VLAN vid:10 ports:1,2
+May 14 11:25:37 faucet.valve INFO     Port 1 added
+May 14 11:25:37 faucet.valve INFO     Sending config for port 1
+May 14 11:25:37 faucet.valve INFO     Port 2 added
+May 14 11:25:37 faucet.valve INFO     Sending config for port 2
+May 14 11:25:37 faucet.exception ERROR    Unhandled exception, killing RYU
+Traceback (most recent call last):
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/util.py", line 51, in __koe
+    func(*args, **kwargs)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 495, in handler_connect_or_disconnect
+    self.handler_datapath(ryu_dp)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 521, in handler_datapath
+    self._send_flow_msgs(ryu_dp, flowmods)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 320, in _send_flow_msgs
+    flow_msg.datapath = ryu_dp
+AttributeError: 'NoneType' object has no attribute 'datapath'
+May 14 11:28:06 faucet DEBUG    DPID 1 (0x1) connected
+May 14 11:28:06 faucet.valve INFO     Configuring DPID 1 (0x1)
+May 14 11:28:06 faucet.valve INFO     Delete VLAN vid:10 ports:1,2
+May 14 11:28:06 faucet.valve INFO     Configuring VLAN vid:10 ports:1,2
+May 14 11:28:06 faucet.valve INFO     Port 1 added
+May 14 11:28:06 faucet.valve INFO     Sending config for port 1
+May 14 11:28:06 faucet.valve INFO     Port 2 added
+May 14 11:28:06 faucet.valve INFO     Sending config for port 2
+May 14 11:28:07 faucet ERROR    Got OFError: version=0x4,msg_type=0x1,msg_len=0x4c,xid=0x946861e8,OFPErrorMsg(code=3,data='\x04\x0e\x00`\x94ha\xe8\x00\x00\x00\x00Z\xdc\x15\xc0\x00\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00\x00\x00#(\xff\xff\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x04\x00\x00\x00\x00\x00\x04\x00\x18\x00\x00\x00\x00',type=12)
+May 14 11:28:07 faucet ERROR    Got OFError: version=0x4,msg_type=0x1,msg_len=0x2c,xid=0x946861e9,OFPErrorMsg(code=3,data='\x04\x1d\x00 \x94ha\xe9\x00\x00\x00\x02\xff\xff\xff\xfe\x00\x01\x00\x10\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00',type=12)
+May 14 12:30:51 faucet DEBUG    DPID 1 (0x1) connected
+May 14 12:30:51 faucet.valve INFO     Configuring DPID 1 (0x1)
+May 14 12:30:51 faucet.valve INFO     Delete VLAN vid:10 ports:1,2
+May 14 12:30:51 faucet.valve INFO     Configuring VLAN vid:10 ports:1,2
+May 14 12:30:51 faucet.valve INFO     Port 1 added
+May 14 12:30:51 faucet.valve INFO     Sending config for port 1
+May 14 12:30:51 faucet.valve INFO     Port 2 added
+May 14 12:30:51 faucet.valve INFO     Sending config for port 2
+May 14 12:30:51 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:00:00:00:00:00:01 in_port:1 vid:10
+May 14 12:30:51 faucet.valve INFO     learned 1 hosts on vlan 10
+May 14 12:30:51 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:b6:e8:b4:18:48:88 in_port:2 vid:10
+May 14 12:30:51 faucet.valve INFO     learned 2 hosts on vlan 10
+May 14 12:30:51 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:b6:e8:b4:18:48:88 in_port:2 vid:10
+May 14 12:30:51 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:62:c6:f8:3e:1c:8a in_port:1 vid:10
+May 14 12:30:51 faucet.valve INFO     learned 3 hosts on vlan 10
+May 14 12:30:51 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:62:c6:f8:3e:1c:8a in_port:1 vid:10
+May 14 12:30:52 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:00:00:00:00:00:02 in_port:2 vid:10
+May 14 12:30:52 faucet.valve INFO     learned 4 hosts on vlan 10
+May 14 12:30:52 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:00:00:00:00:00:02 in_port:2 vid:10
+May 14 12:35:53 faucet.valve INFO     expiring host 00:00:00:00:00:02 from vlan 10
+May 14 12:35:53 faucet.valve INFO     expiring host 00:00:00:00:00:01 from vlan 10
+May 14 12:35:53 faucet.valve INFO     expiring host b6:e8:b4:18:48:88 from vlan 10
+May 14 12:35:53 faucet.valve INFO     expiring host 62:c6:f8:3e:1c:8a from vlan 10
+May 14 12:35:53 faucet.valve INFO     0 recently active hosts on vlan 10
+May 14 12:41:54 faucet DEBUG    DPID 1 (0x1) connected
+May 14 12:41:54 faucet.valve INFO     Configuring DPID 1 (0x1)
+May 14 12:41:54 faucet.valve INFO     Delete VLAN vid:10 ports:1,2
+May 14 12:41:54 faucet.valve INFO     Configuring VLAN vid:10 ports:1,2
+May 14 12:41:54 faucet.valve INFO     Port 1 added
+May 14 12:41:54 faucet.valve INFO     Sending config for port 1
+May 14 12:41:54 faucet.valve INFO     Port 2 added
+May 14 12:41:54 faucet.valve INFO     Sending config for port 2
+May 14 12:41:54 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:fa:d4:b3:dc:1f:26 in_port:1 vid:10
+May 14 12:41:54 faucet.valve INFO     learned 1 hosts on vlan 10
+May 14 12:41:54 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:fa:d4:b3:dc:1f:26 in_port:1 vid:10
+May 14 12:41:54 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:00:00:00:00:00:01 in_port:1 vid:10
+May 14 12:41:54 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:00:00:00:00:00:01 in_port:1 vid:10
+May 14 12:41:54 faucet.valve INFO     learned 2 hosts on vlan 10
+May 14 12:41:54 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:00:00:00:00:00:02 in_port:2 vid:10
+May 14 12:41:54 faucet.valve INFO     learned 3 hosts on vlan 10
+May 14 12:41:54 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:00:00:00:00:00:02 in_port:2 vid:10
+May 14 12:41:54 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:1e:e6:82:03:c3:9d in_port:2 vid:10
+May 14 12:41:54 faucet.valve INFO     learned 4 hosts on vlan 10
+May 14 12:41:54 faucet.valve DEBUG    Packet_in DPID 1 (0x1) src:1e:e6:82:03:c3:9d in_port:2 vid:10

@@ -331,25 +331,32 @@ class Valve(object):
 
     def value_meteradd(self, flags, meter_id, bands):
         # calls metermod to modify the meter, giving it the command to add a meter OFPMC_ADD.
-        return valve_of.metermod(
-            datapath=self.dp,
+        v = valve_of.metermod(
+            datapath=None,
             command=ofp.OFPMC_ADD,
             flags=flags,
             meter_id=meter_id,
             bands=bands)
-
+        print "------------"
+        print v
+        print "------------"
+        return v
 
     def valve_flowcontroller(self, table_id, match=None, priority=None,
                              inst=None):
         """Add flow outputting to controller."""
         if inst is None:
             inst = []
-        return self.valve_flowmod(
+        f = self.valve_flowmod(
             table_id,
             match=match,
             priority=priority,
             inst=[valve_of.apply_actions(
                 [valve_of.output_controller()])] + inst)
+        print "========="
+        print f
+        print "========="
+        return f
 
     def valve_flowreorder(self, input_ofmsgs):
         """Reorder flows for better OFA performance."""
@@ -405,6 +412,24 @@ class Valve(object):
         ofmsgs.append(self.value_meteradd(
             flags=ofp.OFPMF_PKTPS,
             meter_id=ofp.OFPM_CONTROLLER,
+            bands=band
+        ))
+        return ofmsgs
+
+    def _add_simple_meter(self):
+        ofmsgs = []
+        band = []
+
+        # creates a band that has a rate limit of 1 and drops know conforming packets
+        band.append(valve_of.dropband(
+            rate=1,
+            burst_size=0))
+        
+
+        # add to the ofmsgs array and return the meter.
+        ofmsgs.append(self.value_meteradd(
+            flags=ofp.OFPMF_PKTPS,
+            meter_id=1,
             bands=band
         ))
         return ofmsgs
@@ -486,7 +511,7 @@ class Valve(object):
         return [self.valve_flowcontroller(
             self.dp.eth_src_table,
             priority=self.dp.low_priority,
-            inst=[valve_of.goto_table(self.dp.eth_dst_table)])]
+            inst=[valve_of.set_meter(1), valve_of.goto_table(self.dp.eth_dst_table)])]
 
     def _add_default_flows(self):
         """Configure datapath with necessary default tables and rules."""
@@ -564,9 +589,10 @@ class Valve(object):
             return []
         self.logger.info('Configuring %s', util.dpid_log(dp_id))
         ofmsgs = []
-        ofmsgs.extend(self._add_default_flows())
         # Add the default meter to ofmsgs, assumes that meter and Controller meter are supported (Jayden Hewer)
-        ofmsgs.extend(self._add_default_meters())
+        #ofmsgs.extend(self._add_default_meters())
+        ofmsgs.extend(self._add_simple_meter())
+        ofmsgs.extend(self._add_default_flows())
         changed_ports = set([])
         for port_no in discovered_up_port_nums:
             if valve_of.ignore_port(port_no):
