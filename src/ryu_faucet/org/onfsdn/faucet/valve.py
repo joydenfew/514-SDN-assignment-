@@ -337,9 +337,6 @@ class Valve(object):
             flags=flags,
             meter_id=meter_id,
             bands=bands)
-        print "------------"
-        print v
-        print "------------"
         return v
 
     def valve_flowcontroller(self, table_id, match=None, priority=None,
@@ -353,9 +350,6 @@ class Valve(object):
             priority=priority,
             inst=[valve_of.apply_actions(
                 [valve_of.output_controller()])] + inst)
-        print "========="
-        print f
-        print "========="
         return f
 
     def valve_flowreorder(self, input_ofmsgs):
@@ -512,6 +506,7 @@ class Valve(object):
             self.dp.eth_src_table,
             priority=self.dp.low_priority,
             inst=[valve_of.set_meter(1), valve_of.goto_table(self.dp.eth_dst_table)])]
+            # setting the meter value of the controller_learn_flow to link it to the meter that is added when a controller connects
 
     def _add_default_flows(self):
         """Configure datapath with necessary default tables and rules."""
@@ -591,6 +586,7 @@ class Valve(object):
         ofmsgs = []
         # Add the default meter to ofmsgs, assumes that meter and Controller meter are supported (Jayden Hewer)
         #ofmsgs.extend(self._add_default_meters())
+        # The line above is commented out as Lagopus does not support this feature.
         ofmsgs.extend(self._add_simple_meter())
         ofmsgs.extend(self._add_default_flows())
         changed_ports = set([])
