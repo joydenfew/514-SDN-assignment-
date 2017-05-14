@@ -93,3 +93,29 @@ Traceback (most recent call last):
   File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 320, in _send_flow_msgs
     flow_msg.datapath = ryu_dp
 AttributeError: 'NoneType' object has no attribute 'datapath'
+May 14 15:55:16 faucet.exception ERROR    Unhandled exception, killing RYU
+Traceback (most recent call last):
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/util.py", line 51, in __koe
+    func(*args, **kwargs)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 495, in handler_connect_or_disconnect
+    self.handler_datapath(ryu_dp)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 520, in handler_datapath
+    dp_id, discovered_up_port_nums)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 601, in datapath_connect
+    ofmsgs.extend(self._add_simple_meter())
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 426, in _add_simple_meter
+    ofmsgs.append(self.value_meterdelete(1))
+TypeError: value_meterdelete() takes exactly 1 argument (2 given)
+May 14 15:57:19 faucet.exception ERROR    Unhandled exception, killing RYU
+Traceback (most recent call last):
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/util.py", line 51, in __koe
+    func(*args, **kwargs)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 495, in handler_connect_or_disconnect
+    self.handler_datapath(ryu_dp)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/faucet.py", line 520, in handler_datapath
+    dp_id, discovered_up_port_nums)
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 601, in datapath_connect
+    ofmsgs.extend(self._add_simple_meter())
+  File "/home/mininet/faucet/src/ryu_faucet/org/onfsdn/faucet/valve.py", line 426, in _add_simple_meter
+    ofmsgs.append(self.value_meterdelete(meter_id=1))
+TypeError: value_meterdelete() got multiple values for keyword argument 'meter_id'

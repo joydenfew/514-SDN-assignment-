@@ -339,6 +339,12 @@ class Valve(object):
             bands=bands)
         return v
 
+    def value_meterdelete(self, meter_id):
+        return valve_of.metermod(
+            meter_id=meter_id,
+            command=ofp.OFPMC_DELETE
+        )
+
     def valve_flowcontroller(self, table_id, match=None, priority=None,
                              inst=None):
         """Add flow outputting to controller."""
@@ -401,18 +407,24 @@ class Valve(object):
             rate=1,
             burst_size=0))
         
-
         # add to the ofmsgs array and return the meter.
         ofmsgs.append(self.value_meteradd(
             flags=ofp.OFPMF_PKTPS,
             meter_id=ofp.OFPM_CONTROLLER,
             bands=band
         ))
+
+        band.append(valve_of.dropband(
+            rate=1,
+            burst_size=0))
         return ofmsgs
 
     def _add_simple_meter(self):
         ofmsgs = []
         band = []
+
+        # delete meter of that id before added new meter to insure that meter id is not taken
+        ofmsgs.append(self.value_meterdelete(meter_id=1))
 
         # creates a band that has a rate limit of 1 and drops know conforming packets
         band.append(valve_of.dropband(
